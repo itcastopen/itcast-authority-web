@@ -46,7 +46,6 @@
           <div class="card" @click.stop="handleEdit(item.id)">
             <div class="card-title">
               <el-tag class="nameInfo" :type="!item.status?'info':''">{{ item.name }}</el-tag>
-              <!-- <el-tag class="nameInfo" :type="!item.status?'info':''">{{ item.id }}</el-tag> -->
               <!-- <span>{{ item.name }}</span> -->
               <span v-if="$hasPermission('application:delete')" class="cardClose el-icon-close" @click.stop="handleDelete(item)"></span>
             </div>
