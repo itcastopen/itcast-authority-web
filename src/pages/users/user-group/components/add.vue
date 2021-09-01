@@ -24,9 +24,6 @@
           />
           <span v-else>{{ userData.name }}</span>
         </el-form-item>
-        {{ userData.userIds }}
-        {{ values }}
-        {{ orgData }}
         <el-form-item label="成员：" prop="userIds">
           <select-tree
             ref="treeSelect"
