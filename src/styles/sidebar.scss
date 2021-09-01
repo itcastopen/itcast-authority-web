@@ -1,0 +1,59 @@
+.hideSidebar{
+  .el-menu--collapse {
+    .el-submenu {
+      .el-submenu__title {
+        .menu-title {
+          height: 0;
+          width: 0;
+          overflow: hidden;
+          visibility: hidden;
+          display: inline-block;
+        }
+        .el-submenu__icon-arrow{
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.applicationTheme{
+  .sidebar-container{
+    background: #00152A !important;
+    &.default{
+      .sidebarLogo{
+        background: #00274C;
+      }
+    }
+    .el-menu{
+      background: #00152A !important;
+      border-left: 0;
+      border-right: 0;
+      color: #ffffff;
+      .el-menu-item,.el-submenu__title {
+        color: #ffffff !important;
+        &.active,&:hover,&.is-active{
+          color: var(--current-color) !important;
+          .menu-title{
+            color: var(--current-color) !important;
+          }
+        }
+        .menu-title{
+          color: #ffffff;
+        }
+        .img-icon-sel{
+          color: inherit !important;
+        }
+      }
+      .el-submenu .el-menu-item.is-active{
+        background-color: var(--current-color) !important;
+        color: #ffffff !important;
+        border-left: 0;
+        .menu-title{
+          color: #ffffff !important;
+        }
+      }
+    }
+  }
+  
+}
